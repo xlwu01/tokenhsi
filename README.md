@@ -36,7 +36,7 @@ Introducing TokenHSI, a unified model that enables physics-based characters to p
 <p align="center">
     <img src="assets/longterm_demo_isaacgym.gif" align="center" width=60% >
     <br>
-    Long-horizon Task Completion in A Complex Dynamic Environment
+    Long-horizon Task Completion in a Complex Dynamic Environment
 </p>
 
 <!-- ## 🕹 Pipeline
