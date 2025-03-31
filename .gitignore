@@ -106,10 +106,8 @@ ipython_config.py
 #pdm.lock
 #   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
 #   in version control.
-#   https://pdm.fming.dev/latest/usage/project/#working-with-version-control
+#   https://pdm.fming.dev/#use-with-ide
 .pdm.toml
-.pdm-python
-.pdm-build/
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
 __pypackages__/
@@ -120,15 +118,6 @@ celerybeat.pid
 
 # SageMath parsed files
 *.sage.py
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
 
 # Spyder project settings
 .spyderproject
@@ -159,4 +148,16 @@ cython_debug/
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+#.idea
+
+
+/body_models/smpl/
+/output/
+/tokenhsi/data/dataset_carry/motions/
+/tokenhsi/data/dataset_amass_loco/motions/
+/tokenhsi/data/dataset_amass_loco/smpl_params/
+/tokenhsi/data/dataset_sit/motions/
+/tokenhsi/data/dataset_sit/objects/
+/tokenhsi/data/dataset_amass_climb/motions/
+/tokenhsi/data/dataset_amass_climb/smpl_params/
+/tokenhsi/data/dataset_amass_climb/objects/
