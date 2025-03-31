@@ -1,15 +1,21 @@
 <p align="center">
 <h1 align="center"<strong>TokenHSI: Unified Synthesis of Physical Human-Scene Interactions through Task Tokenization</strong></h1>
   <p align="center">
-    <a href='https://liangpan99.github.io/' target='_blank'>Liang Pan</a><sup>1,2</sup>&emsp;
-    <a href='https://zeshiyang.github.io/' target='_blank'>Zeshi Yang</a> <sup>3</sup>&emsp;
-    <a href='https://frank-zy-dou.github.io/' target='_blank'>Zhiyang Dou</a><sup>2</sup>&emsp;
-    <a href='https://wenjiawang0312.github.io/' target='_blank'>Wenjia Wang</a><sup>2</sup>&emsp;
-    <a href='https://www.buzhenhuang.com/about/' target='_blank'>Buzhen Huang</a><sup>4</sup>&emsp;
-    <br>
-    <a href='https://scholar.google.com/citations?user=KNWTvgEAAAAJ&hl=en' target='_blank'>Bo Dai</a><sup>2,5</sup>&emsp;
-    <a href='https://i.cs.hku.hk/~taku/' target='_blank'>Taku Komura</a><sup>2</sup>&emsp;
-    <a href='https://scholar.google.com/citations?user=GStTsxAAAAAJ&hl=en&oi=ao' target='_blank'>Jingbo Wang</a><sup>1</sup>&emsp;
+    <a href='https://liangpan99.github.io/' target='_blank'>Liang Pan</a><sup>1,2</sup>
+    ·
+    <a href='https://zeshiyang.github.io/' target='_blank'>Zeshi Yang</a> <sup>3</sup>
+    ·
+    <a href='https://frank-zy-dou.github.io/' target='_blank'>Zhiyang Dou</a><sup>2</sup>
+    ·
+    <a href='https://wenjiawang0312.github.io/' target='_blank'>Wenjia Wang</a><sup>2</sup>
+    ·
+    <a href='https://www.buzhenhuang.com/about/' target='_blank'>Buzhen Huang</a><sup>4</sup>
+    ·
+    <a href='https://scholar.google.com/citations?user=KNWTvgEAAAAJ&hl=en' target='_blank'>Bo Dai</a><sup>2,5</sup>
+    ·
+    <a href='https://i.cs.hku.hk/~taku/' target='_blank'>Taku Komura</a><sup>2</sup>
+    ·
+    <a href='https://scholar.google.com/citations?user=GStTsxAAAAAJ&hl=en&oi=ao' target='_blank'>Jingbo Wang</a><sup>1</sup>
     <br>
     <sup>1</sup>Shanghai AI Lab <sup>2</sup>The University of Hong Kong <sup>3</sup>Independent Researcher <sup>4</sup>Southeast University <sup>5</sup>Feeling AI
     <br>
