@@ -51,6 +51,7 @@ Introducing TokenHSI, a unified model that enables physics-based characters to p
 </div> -->
 
 ## 🔥 News  
+- **[2025-04-01]** We just updated the Getting Started section. You can play TokenHSI now!
 - **[2025-03-31]** We've released the codebase and checkpoint for the foundational skill learning part.
 
 ## 📝 TODO List  
@@ -61,7 +62,140 @@ Introducing TokenHSI, a unified model that enables physics-based characters to p
 
 ## 📖 Getting Started
 
-coming soon
+### Dependencies
+
+Follow the following instructions: 
+
+1. Create new conda environment and install pytroch
+
+    ```
+    conda create -n tokenhsi python=3.8
+    conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.8 -c pytorch -c nvidia
+    pip install -r requirements.txt
+    ```
+
+2. Install [IsaacGym Preview 4](https://developer.nvidia.com/isaac-gym) 
+
+    ```
+    cd IsaacGym_Preview_4_Package/isaacgym/python
+    pip install -e .
+
+    # add your conda env path to ~/.bashrc
+    export LD_LIBRARY_PATH="your_conda_env_path/lib:$LD_LIBRARY_PATH"
+    ```
+
+3. Install pytorch3d (optional, if you want to run the long-horizon task completion demo)
+
+    **We use pytorch3d to rapidly render height maps of dynamic objects for thousands of simulation environments.**
+
+    ```
+    conda install -c fvcore -c iopath -c conda-forge fvcore iopath
+    pip install git+https://github.com/facebookresearch/pytorch3d.git@v0.7.7
+    ```
+
+4. Download [SMPL body models](https://smpl.is.tue.mpg.de/) and organize them as follows:
+
+    ```
+    |-- assets
+    |-- body_models
+        |-- smpl
+            |-- SMPL_FEMALE.pkl
+            |-- SMPL_MALE.pkl
+            |-- SMPL_NEUTRAL.pkl
+            |-- ...
+    |-- lpanlib
+    |-- tokenhsi
+    ```
+
+### Motion & Object Data
+
+We provide two methods to generate the motion and object data.
+
+* Download pre-processed data from [Huggingface](https://huggingface.co/datasets/lianganimation/TokenHSI/tree/main). Please follow the instruction in the dataset page.
+
+* Generate data from source:
+
+  1. Download [AMASS (SMPL-X Neutral)](https://amass.is.tue.mpg.de/), [SAMP](https://samp.is.tue.mpg.de/), and [OMOMO](https://github.com/lijiaman/omomo_release).
+
+  2. Modify dataset paths in ```tokenhsi/data/dataset_cfg.yaml``` file.
+
+      ```
+      # Motion datasets, please use your own paths
+      amass_dir: "/YOUR_PATH/datasets/AMASS"
+      samp_pkl_dir: "/YOUR_PATH/datasets/samp"
+      omomo_dir: "/YOUR_PATH/datasets/OMOMO/data"
+      ```
+
+  3. We still need to download the pre-processes data from [Huggingface](https://huggingface.co/datasets/lianganimation/TokenHSI/tree/main). But now we only require the object data.
+
+  4. Run the following script:
+
+      ```
+      bash tokenhsi/scripts/gen_data.sh
+      ```
+
+### Checkpoints
+
+Download checkpoints from [Huggingface](https://huggingface.co/lianganimation/TokenHSI). Please follow the instruction in the model page.
+
+### Play TokenHSI!
+
+* Single task policy trained with AMP
+
+  * Path-following
+      ```
+      # test
+      sh tokenhsi/scripts/single_task/traj_test.sh
+      # train
+      sh tokenhsi/scripts/single_task/traj_train.sh
+      ```
+  * Sitting
+      ```
+      # test
+      sh tokenhsi/scripts/single_task/sit_test.sh
+      # train
+      sh tokenhsi/scripts/single_task/sit_train.sh
+      ```
+  * Climbing
+      ```
+      # test
+      sh tokenhsi/scripts/single_task/climb_test.sh
+      # train
+      sh tokenhsi/scripts/single_task/climb_train.sh
+      ```
+  * Carrying
+      ```
+      # test
+      sh tokenhsi/scripts/single_task/carry_test.sh
+      # train
+      sh tokenhsi/scripts/single_task/carry_train.sh
+      ```
+
+* TokenHSI's unified transformer policy
+
+  * Foundational Skill Learning
+      ```
+      # test
+      sh tokenhsi/scripts/tokenhsi/stage1_test.sh
+      # eval
+      sh tokenhsi/scripts/tokenhsi/stage1_eval.sh carry # we need to specify a task to eval, e.g., traj, sit, climb, or carry.
+      # train
+      sh tokenhsi/scripts/tokenhsi/stage1_train.sh
+      ```
+
+      If you successfully run the test command, you will see:
+      <p align="center">
+        <img src="assets/stage1_demo.gif" align="center" width=60% >
+      </p>
+
+
+  * Policy Adaptation - Skill Composition
+
+  * Policy Adaptation - Object Shape Variation
+
+  * Policy Adaptation - Terrain Shape Variation
+
+  * Policy Adaptation - Long-horizon Task Completion
 
 ## 🔗 Citation
 
@@ -114,7 +248,7 @@ This repository builds upon the following awesome open-source projects:
 - [ASE](https://github.com/nv-tlabs/ASE): Contributes to the physics-based character control codebase  
 - [Pacer](https://github.com/nv-tlabs/pacer): Contributes to the procedural terrain generation and trajectory following task
 - [rl_games](https://github.com/Denys88/rl_games): Contributes to the reinforcement learning code  
-- [OMOMO](https://github.com/lijiaman/omomo_release)/[SAMP](https://samp.is.tue.mpg.de/InterDiff)/[AMASS](https://amass.is.tue.mpg.de/)/[3D-Front](https://arxiv.org/abs/2011.09127): Used for the reference dataset construction
+- [OMOMO](https://github.com/lijiaman/omomo_release)/[SAMP](https://samp.is.tue.mpg.de/)/[AMASS](https://amass.is.tue.mpg.de/)/[3D-Front](https://arxiv.org/abs/2011.09127): Used for the reference dataset construction
 - [InterMimic](https://github.com/Sirui-Xu/InterMimic): Used for the github repo readme design 
 
 This codebase is released under the [MIT License](LICENSE).  
