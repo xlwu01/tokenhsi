@@ -197,6 +197,22 @@ Download checkpoints from [Huggingface](https://huggingface.co/lianganimation/To
 
   * Policy Adaptation - Long-horizon Task Completion
 
+### Viewer Shortcuts
+
+| Keyboard | Function |
+| ---- | --- |
+| F | focus on humanoid |
+| Right Click + WASD | change view port |
+| Shift + Right Click + WASD | change view port fast |
+| K | visualize lines |
+| L | record screenshot, press again to stop recording|
+
+The recorded screenshots are saved in ``` output/imgs/ ```. You can use ``` lpanlib/others/video.py ``` to generate mp4 video from the recorded images.
+
+```
+python lpanlib/others/video.py --imgs_dir output/imgs/example_path --delete_imgs
+```
+
 ## 🔗 Citation
 
 If you find our work helpful, please cite:
