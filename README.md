@@ -111,7 +111,7 @@ Follow the following instructions:
 
 We provide two methods to generate the motion and object data.
 
-* Download pre-processed data from [Huggingface](https://huggingface.co/datasets/lianganimation/TokenHSI/tree/main). Please follow the instruction in the dataset page.
+* Download pre-processed data from [Huggingface](https://huggingface.co/datasets/lianganimation/TokenHSI). Please follow the instruction in the dataset page.
 
 * Generate data from source:
 
@@ -126,7 +126,7 @@ We provide two methods to generate the motion and object data.
       omomo_dir: "/YOUR_PATH/datasets/OMOMO/data"
       ```
 
-  3. We still need to download the pre-processes data from [Huggingface](https://huggingface.co/datasets/lianganimation/TokenHSI/tree/main). But now we only require the object data.
+  3. We still need to download the pre-processes data from [Huggingface](https://huggingface.co/datasets/lianganimation/TokenHSI). But now we only require the object data.
 
   4. Run the following script:
 
