@@ -126,7 +126,7 @@ We provide two methods to generate the motion and object data.
       omomo_dir: "/YOUR_PATH/datasets/OMOMO/data"
       ```
 
-  3. We still need to download the pre-processes data from [Huggingface](https://huggingface.co/datasets/lianganimation/TokenHSI). But now we only require the object data.
+  3. We still need to download the pre-processed data from [Huggingface](https://huggingface.co/datasets/lianganimation/TokenHSI). But now we only require the object data.
 
   4. Run the following script:
 
@@ -143,13 +143,16 @@ Download checkpoints from [Huggingface](https://huggingface.co/lianganimation/To
 * Single task policy trained with AMP
 
   * Path-following
+
       ```
       # test
       sh tokenhsi/scripts/single_task/traj_test.sh
       # train
       sh tokenhsi/scripts/single_task/traj_train.sh
       ```
+
   * Sitting
+
       ```
       # test
       sh tokenhsi/scripts/single_task/sit_test.sh
@@ -157,13 +160,16 @@ Download checkpoints from [Huggingface](https://huggingface.co/lianganimation/To
       sh tokenhsi/scripts/single_task/sit_train.sh
       ```
   * Climbing
+
       ```
       # test
       sh tokenhsi/scripts/single_task/climb_test.sh
       # train
       sh tokenhsi/scripts/single_task/climb_train.sh
       ```
+
   * Carrying
+
       ```
       # test
       sh tokenhsi/scripts/single_task/carry_test.sh
@@ -174,6 +180,7 @@ Download checkpoints from [Huggingface](https://huggingface.co/lianganimation/To
 * TokenHSI's unified transformer policy
 
   * Foundational Skill Learning
+  
       ```
       # test
       sh tokenhsi/scripts/tokenhsi/stage1_test.sh
