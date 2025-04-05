@@ -21,7 +21,7 @@
     <br>
     <strong>CVPR 2025</strong>
     <br>
-    <strong>Oral Presentation (Top 3.3%)</strong>
+    <strong>🏆️ Oral Presentation (Top 3.3%)</strong>
   </p>
 </p>
 <p align="center">
@@ -144,7 +144,7 @@ We provide two methods to generate the motion and object data.
 
 Download checkpoints from [Huggingface](https://huggingface.co/lianganimation/TokenHSI). Please follow the instruction in the model page.
 
-### Play TokenHSI!
+## 🕹️ Play TokenHSI!
 
 * Single task policy trained with AMP
 
