@@ -20,6 +20,8 @@
     <sup>1</sup>Shanghai AI Lab <sup>2</sup>The University of Hong Kong <sup>3</sup>Independent Researcher <sup>4</sup>Southeast University <sup>5</sup>Feeling AI
     <br>
     <strong>CVPR 2025</strong>
+    <br>
+    <strong>Oral Presentation (3.3% of the accepted papers)</strong>
   </p>
 </p>
 <p align="center">
@@ -51,6 +53,7 @@ Introducing TokenHSI, a unified model that enables physics-based characters to p
 </div> -->
 
 ## 🔥 News  
+- **[2025-04-05]** TokenHSI has been selected as an oral paper at CVPR 2025! 🎉.
 - **[2025-04-03]** Released long-horizon task completion with a pre-trained model.
 - **[2025-04-01]** We just updated the Getting Started section. You can play TokenHSI now!
 - **[2025-03-31]** We've released the codebase and checkpoint for the foundational skill learning part.
