@@ -41,7 +41,19 @@ from tokenhsi.env.tasks.multi_task.humanoid_traj_sit_carry_climb import Humanoid
 #########
 
 ######### policy adaptation
+
+# skill composition
+from env.tasks.comp_interaction_skills.humanoid_comp_sit_carry import HumanoidCompSitCarry
+from env.tasks.comp_interaction_skills.humanoid_comp_climb_carry import HumanoidCompClimbCarry
+from env.tasks.comp_interaction_skills.humanoid_comp_traj_carry import HumanoidCompTrajCarry
+
+# object shape variation
+
+# terrain shape variation
+
+# long-horizon task completion
 from tokenhsi.env.tasks.longterm_task_completion.humanoid_longterm_4basicskills import HumanoidLongTerm4BasicSkills
+
 #########
 
 from env.tasks.vec_task_wrappers import VecTaskPythonWrapper

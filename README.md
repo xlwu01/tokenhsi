@@ -21,7 +21,7 @@
     <br>
     <strong>CVPR 2025</strong>
     <br>
-    <strong>Oral Presentation (3.3% of the accepted papers)</strong>
+    <strong>Oral Presentation (Top 3.3%)</strong>
   </p>
 </p>
 <p align="center">
@@ -53,15 +53,17 @@ Introducing TokenHSI, a unified model that enables physics-based characters to p
 </div> -->
 
 ## 🔥 News  
-- **[2025-04-05]** TokenHSI has been selected as an oral paper at CVPR 2025! 🎉.
+- **[2025-04-06]** Released three skill composition tasks with pre-trained models.
+- **[2025-04-05]** TokenHSI has been selected as an oral paper at CVPR 2025! 🎉
 - **[2025-04-03]** Released long-horizon task completion with a pre-trained model.
 - **[2025-04-01]** We just updated the Getting Started section. You can play TokenHSI now!
 - **[2025-03-31]** We've released the codebase and checkpoint for the foundational skill learning part.
 
 ## 📝 TODO List  
 - [x] Release foundational skill learning 
-- [ ] Release policy adaptation - skill composition  
-- [ ] Release policy adaptation - object/terrain shape variation
+- [x] Release policy adaptation - skill composition  
+- [ ] Release policy adaptation - object shape variation
+- [ ] Release policy adaptation - terrain shape variation
 - [x] Release policy adaptation - long-horizon task completion
 
 ## 📖 Getting Started
@@ -201,6 +203,54 @@ Download checkpoints from [Huggingface](https://huggingface.co/lianganimation/To
 
 
   * Policy Adaptation - Skill Composition
+    * Traj + Carry
+
+      ```
+      # test
+      sh tokenhsi/scripts/tokenhsi/stage2_comp_traj_carry_test.sh
+      # eval
+      sh tokenhsi/scripts/tokenhsi/stage2_comp_traj_carry_eval.sh
+      # train
+      sh tokenhsi/scripts/tokenhsi/stage2_comp_traj_carry_train.sh
+      ```
+
+      If you successfully run the test command, you will see:
+    <p align="center">
+      <img src="assets/stage2_comp_traj_carry.gif" align="center" width=60% >
+    </p>
+
+    * Sit + Carry
+
+      ```
+      # test
+      sh tokenhsi/scripts/tokenhsi/stage2_comp_sit_carry_test.sh
+      # eval
+      sh tokenhsi/scripts/tokenhsi/stage2_comp_sit_carry_eval.sh
+      # train
+      sh tokenhsi/scripts/tokenhsi/stage2_comp_sit_carry_train.sh
+      ```
+
+      If you successfully run the test command, you will see:
+    <p align="center">
+      <img src="assets/stage2_comp_sit_carry.gif" align="center" width=60% >
+    </p>
+
+    * Climb + Carry
+
+      ```
+      # test
+      sh tokenhsi/scripts/tokenhsi/stage2_comp_climb_carry_test.sh
+      # eval
+      sh tokenhsi/scripts/tokenhsi/stage2_comp_climb_carry_eval.sh
+      # train
+      sh tokenhsi/scripts/tokenhsi/stage2_comp_climb_carry_train.sh
+      ```
+
+      If you successfully run the test command, you will see:
+    <p align="center">
+      <img src="assets/stage2_comp_climb_carry.gif" align="center" width=60% >
+    </p>
+
 
   * Policy Adaptation - Object Shape Variation
 
