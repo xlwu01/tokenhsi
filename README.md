@@ -53,6 +53,7 @@ Introducing TokenHSI, a unified model that enables physics-based characters to p
 </div> -->
 
 ## 🔥 News  
+- **[2025-04-07]** <b>Released full code. Please note to download the latest datasets and models from Hugging Face.</b>
 - **[2025-04-06]** Released three skill composition tasks with pre-trained models.
 - **[2025-04-05]** TokenHSI has been selected as an oral paper at CVPR 2025! 🎉
 - **[2025-04-03]** Released long-horizon task completion with a pre-trained model.
@@ -62,8 +63,8 @@ Introducing TokenHSI, a unified model that enables physics-based characters to p
 ## 📝 TODO List  
 - [x] Release foundational skill learning 
 - [x] Release policy adaptation - skill composition  
-- [ ] Release policy adaptation - object shape variation
-- [ ] Release policy adaptation - terrain shape variation
+- [x] Release policy adaptation - object shape variation
+- [x] Release policy adaptation - terrain shape variation
 - [x] Release policy adaptation - long-horizon task completion
 
 ## 📖 Getting Started
@@ -117,7 +118,7 @@ Follow the following instructions:
 
 We provide two methods to generate the motion and object data.
 
-* Download pre-processed data from [Huggingface](https://huggingface.co/datasets/lianganimation/TokenHSI). Please follow the instruction in the dataset page.
+* Download pre-processed data from [Hugging Face](https://huggingface.co/datasets/lianganimation/TokenHSI). Please follow the instruction in the dataset page.
 
 * Generate data from source:
 
@@ -132,7 +133,7 @@ We provide two methods to generate the motion and object data.
       omomo_dir: "/YOUR_PATH/datasets/OMOMO/data"
       ```
 
-  3. We still need to download the pre-processed data from [Huggingface](https://huggingface.co/datasets/lianganimation/TokenHSI). But now we only require the object data.
+  3. We still need to download the pre-processed data from [Hugging Face](https://huggingface.co/datasets/lianganimation/TokenHSI). But now we only require the object data.
 
   4. Run the following script:
 
@@ -142,7 +143,7 @@ We provide two methods to generate the motion and object data.
 
 ### Checkpoints
 
-Download checkpoints from [Huggingface](https://huggingface.co/lianganimation/TokenHSI). Please follow the instruction in the model page.
+Download checkpoints from [Hugging Face](https://huggingface.co/lianganimation/TokenHSI). Please follow the instruction in the model page.
 
 ## 🕹️ Play TokenHSI!
 
@@ -254,7 +255,71 @@ Download checkpoints from [Huggingface](https://huggingface.co/lianganimation/To
 
   * Policy Adaptation - Object Shape Variation
 
+    * Carrying: Box-2-Chair
+
+      ```
+      # test
+      sh tokenhsi/scripts/tokenhsi/stage2_object_chair_test.sh
+      # eval
+      sh tokenhsi/scripts/tokenhsi/stage2_object_chair_eval.sh
+      # train
+      sh tokenhsi/scripts/tokenhsi/stage2_object_chair_train.sh
+      ```
+
+      If you successfully run the test command, you will see:
+    <p align="center">
+      <img src="assets/stage2_object_chair.gif" align="center" width=60% >
+    </p>
+
+    * Carrying: Box-2-Table
+
+      ```
+      # test
+      sh tokenhsi/scripts/tokenhsi/stage2_object_table_test.sh
+      # eval
+      sh tokenhsi/scripts/tokenhsi/stage2_object_table_eval.sh
+      # train
+      sh tokenhsi/scripts/tokenhsi/stage2_object_table_train.sh
+      ```
+
+      If you successfully run the test command, you will see:
+    <p align="center">
+      <img src="assets/stage2_object_table.gif" align="center" width=60% >
+    </p>
+
   * Policy Adaptation - Terrain Shape Variation
+
+    * Path-following
+
+      ```
+      # test
+      sh tokenhsi/scripts/tokenhsi/stage2_terrain_traj_test.sh
+      # eval
+      sh tokenhsi/scripts/tokenhsi/stage2_terrain_traj_eval.sh
+      # train
+      sh tokenhsi/scripts/tokenhsi/stage2_terrain_traj_train.sh
+      ```
+
+      If you successfully run the test command, you will see:
+    <p align="center">
+      <img src="assets/stage2_terrain_traj.gif" align="center" width=60% >
+    </p>
+  
+  * Carrying
+
+      ```
+      # test
+      sh tokenhsi/scripts/tokenhsi/stage2_terrain_carry_test.sh
+      # eval
+      sh tokenhsi/scripts/tokenhsi/stage2_terrain_carry_eval.sh
+      # train
+      sh tokenhsi/scripts/tokenhsi/stage2_terrain_carry_train.sh
+      ```
+
+      If you successfully run the test command, you will see:
+    <p align="center">
+      <img src="assets/stage2_terrain_carry.gif" align="center" width=60% >
+    </p>
 
   * Policy Adaptation - Long-horizon Task Completion
 

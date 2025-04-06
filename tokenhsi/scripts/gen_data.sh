@@ -11,6 +11,15 @@ python ./tokenhsi/data/$dataset/generate_motion.py
 printf "\n\n"
 echo "Done!"
 
+dataset="dataset_amass_loco_stairs"
+printf "\n\n"
+echo "Processing $dataset"
+printf "\n\n"
+python ./tokenhsi/data/$dataset/preprocess.py --dataset_cfg $cfg_path
+python ./tokenhsi/data/$dataset/generate_motion.py
+printf "\n\n"
+echo "Done!"
+
 dataset="dataset_amass_climb"
 printf "\n\n"
 echo "Processing $dataset"

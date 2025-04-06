@@ -23,6 +23,28 @@ motions:
     - "SFU+__+0007+__+0007_Walking001_stageii.npz"
     - "KIT+__+11+__+WalkInClockwiseCircle09_stageii.npz"
 
+  loco_stairs:
+    - "KIT+__+167+__+downstairs04_stageii.npz"
+    - "KIT+__+167+__+upstairs_downstairs01_stageii.npz"
+    - "KIT+__+183+__+upstairs10_stageii.npz"
+    - "KIT+__+359+__+downstairs04_stageii.npz"
+    - "KIT+__+359+__+downstairs06_stageii.npz"
+    - "KIT+__+359+__+upstairs09_stageii.npz"
+    - "KIT+__+359+__+upstairs_downstairs03_stageii.npz"
+    - "KIT+__+424+__+upstairs03_stageii.npz"
+    - "KIT+__+424+__+upstairs05_stageii.npz"
+    - "KIT+__+513+__+downstairs06_stageii.npz"
+    - "KIT+__+513+__+downstairs07_stageii.npz"
+    - "KIT+__+513+__+upstairs07_stageii.npz"
+    - "KIT+__+183+__+downstairs01_stageii.npz"
+    - "KIT+__+167+__+downstairs05_stageii.npz"
+    - "KIT+__+3+__+downstairs05_stageii.npz"
+    - "KIT+__+424+__+downstairs01_stageii.npz"
+    - "KIT+__+513+__+upstairs_downstairs06_stageii.npz"
+    - "KIT+__+423+__+upstairs09_stageii.npz"
+    - "KIT+__+424+__+upstairs01_stageii.npz"
+    - "KIT+__+3+__+upstairs_downstairs01_stageii.npz"
+
   carry:
     - "ACCAD+__+Female1Walking_c3d+__+B19_-_walk_to_pick_up_box_stageii.npz"
     - "ACCAD+__+Female1General_c3d+__+A5_-_pick_up_box_stageii.npz"

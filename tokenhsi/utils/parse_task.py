@@ -48,8 +48,11 @@ from env.tasks.comp_interaction_skills.humanoid_comp_climb_carry import Humanoid
 from env.tasks.comp_interaction_skills.humanoid_comp_traj_carry import HumanoidCompTrajCarry
 
 # object shape variation
+from env.tasks.adapt_interaction_skills.humanoid_adapt_carry_box2objs import HumanoidAdaptCarryBox2Objs
 
 # terrain shape variation
+from env.tasks.adapt_interaction_skills.humanoid_adapt_traj_ground2terrain import HumanoidAdaptTrajGround2Terrain
+from env.tasks.adapt_interaction_skills.humanoid_adapt_carry_ground2terrain import HumanoidAdaptCarryGround2Terrain
 
 # long-horizon task completion
 from tokenhsi.env.tasks.longterm_task_completion.humanoid_longterm_4basicskills import HumanoidLongTerm4BasicSkills

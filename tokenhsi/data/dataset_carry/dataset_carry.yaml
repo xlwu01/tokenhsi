@@ -47,6 +47,48 @@ motions:
     - file: ../dataset_amass_loco/motions/ACCAD/ACCAD+__+Female1Walking_c3d+__+B9_-_walk_turn_left_(90)_stageii/phys_humanoid_v3/ref_motion.npy
       weight: 1.0
 
+  loco_terrain:
+    - file: ../dataset_amass_loco_stairs/motions/KIT/KIT+__+167+__+downstairs04_stageii/phys_humanoid_v3/ref_motion.npy
+      weight: 1.0
+    - file: ../dataset_amass_loco_stairs/motions/KIT/KIT+__+167+__+upstairs_downstairs01_stageii/phys_humanoid_v3/ref_motion.npy
+      weight: 1.0
+    - file: ../dataset_amass_loco_stairs/motions/KIT/KIT+__+183+__+upstairs10_stageii/phys_humanoid_v3/ref_motion.npy
+      weight: 1.0
+    - file: ../dataset_amass_loco_stairs/motions/KIT/KIT+__+359+__+downstairs04_stageii/phys_humanoid_v3/ref_motion.npy
+      weight: 1.0
+    - file: ../dataset_amass_loco_stairs/motions/KIT/KIT+__+359+__+downstairs06_stageii/phys_humanoid_v3/ref_motion.npy
+      weight: 1.0
+    - file: ../dataset_amass_loco_stairs/motions/KIT/KIT+__+359+__+upstairs09_stageii/phys_humanoid_v3/ref_motion.npy
+      weight: 1.0
+    - file: ../dataset_amass_loco_stairs/motions/KIT/KIT+__+359+__+upstairs_downstairs03_stageii/phys_humanoid_v3/ref_motion.npy
+      weight: 1.0
+    - file: ../dataset_amass_loco_stairs/motions/KIT/KIT+__+424+__+upstairs03_stageii/phys_humanoid_v3/ref_motion.npy
+      weight: 1.0
+    - file: ../dataset_amass_loco_stairs/motions/KIT/KIT+__+424+__+upstairs05_stageii/phys_humanoid_v3/ref_motion.npy
+      weight: 1.0
+    - file: ../dataset_amass_loco_stairs/motions/KIT/KIT+__+513+__+downstairs06_stageii/phys_humanoid_v3/ref_motion.npy
+      weight: 1.0
+    - file: ../dataset_amass_loco_stairs/motions/KIT/KIT+__+513+__+downstairs07_stageii/phys_humanoid_v3/ref_motion.npy
+      weight: 1.0
+    - file: ../dataset_amass_loco_stairs/motions/KIT/KIT+__+513+__+upstairs07_stageii/phys_humanoid_v3/ref_motion.npy
+      weight: 1.0
+    - file: ../dataset_amass_loco_stairs/motions/KIT/KIT+__+183+__+downstairs01_stageii/phys_humanoid_v3/ref_motion.npy
+      weight: 1.0
+    - file: ../dataset_amass_loco_stairs/motions/KIT/KIT+__+167+__+downstairs05_stageii/phys_humanoid_v3/ref_motion.npy
+      weight: 1.0
+    - file: ../dataset_amass_loco_stairs/motions/KIT/KIT+__+3+__+downstairs05_stageii/phys_humanoid_v3/ref_motion.npy
+      weight: 1.0
+    - file: ../dataset_amass_loco_stairs/motions/KIT/KIT+__+424+__+downstairs01_stageii/phys_humanoid_v3/ref_motion.npy
+      weight: 1.0
+    - file: ../dataset_amass_loco_stairs/motions/KIT/KIT+__+513+__+upstairs_downstairs06_stageii/phys_humanoid_v3/ref_motion.npy
+      weight: 1.0
+    - file: ../dataset_amass_loco_stairs/motions/KIT/KIT+__+423+__+upstairs09_stageii/phys_humanoid_v3/ref_motion.npy
+      weight: 1.0
+    - file: ../dataset_amass_loco_stairs/motions/KIT/KIT+__+424+__+upstairs01_stageii/phys_humanoid_v3/ref_motion.npy
+      weight: 1.0
+    - file: ../dataset_amass_loco_stairs/motions/KIT/KIT+__+3+__+upstairs_downstairs01_stageii/phys_humanoid_v3/ref_motion.npy
+      weight: 1.0
+
   omomo:
     - file: motions/omomo/OMOMO+__+sub7_largebox_006/phys_humanoid_v3/ref_motion.npy
       weight: 1.0
