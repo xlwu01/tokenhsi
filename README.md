@@ -26,7 +26,7 @@
 </p>
 <p align="center">
   <a href='https://arxiv.org/abs/2503.19901'>
-    <img src='https://img.shields.io/badge/Arxiv-2502.20390-A42C25?style=flat&logo=arXiv&logoColor=A42C25'></a>
+    <img src='https://img.shields.io/badge/arXiv-2503.19901-A42C25?style=flat&logo=arXiv&logoColor=A42C25'></a>
   <a href='https://arxiv.org/pdf/2503.19901'>
     <img src='https://img.shields.io/badge/Paper-PDF-yellow?style=flat&logo=arXiv&logoColor=yellow'></a>
   <a href='https://liangpan99.github.io/TokenHSI/'>
