@@ -22,6 +22,8 @@
     <strong>CVPR 2025</strong>
     <br>
     <strong>🏆️ Oral Presentation (Top 3.3%)</strong>
+    <br>
+    Also <strong>Spotlight</strong> in The 1st Workshop on Humanoid Agents at CVPR 2025
   </p>
 </p>
 <p align="center">
