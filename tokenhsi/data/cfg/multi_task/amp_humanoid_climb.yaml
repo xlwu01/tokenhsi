@@ -170,7 +170,7 @@ env:
   # 顺序训练相关配置
   enableSequentialTraining: True  # 是否启用顺序训练
   taskSequence: [0, 1, 2, 3]  # 任务执行顺序
-  taskEpochs: [10, 30, 30, 30]  # 每个任务的训练轮数
+  taskEpochs: [0, 0, 0, 1]  # 每个任务的训练轮数
     
 
   # power reward

@@ -58,7 +58,7 @@ params:
     env_name: rlgpu
     multi_gpu: False
     ppo: True
-    mixed_precision: False
+    mixed_precision: True
     normalize_input: True # Pay attention to this! We still perform normalization in amp_agent, not in network.
     normalize_value: True
     reward_shaper:
@@ -66,13 +66,13 @@ params:
     normalize_advantage: True
     gamma: 0.99
     tau: 0.95
-    learning_rate: 2e-5
+    learning_rate: 3e-5
     lr_schedule: constant
     score_to_win: 20000
     max_epochs: 1000000
     save_best_after: 50
-    save_frequency: 1000
-    save_intermediate: False
+    save_frequency: 500
+    save_intermediate: True
     print_stats: True
     grad_norm: 1.0
     entropy_coef: 0.0
@@ -81,7 +81,7 @@ params:
     e_clip: 0.2
     horizon_length: 32
     minibatch_size: 16384
-    mini_epochs: 6
+    mini_epochs: 4
     critic_coef: 5
     clip_value: False
     seq_len: 4
@@ -89,8 +89,8 @@ params:
     amp_obs_demo_buffer_size: 200000
     amp_replay_buffer_size: 200000
     amp_replay_keep_prob: 0.01
-    amp_batch_size: 512
-    amp_minibatch_size: 4096
+    amp_batch_size: 1024
+    amp_minibatch_size: 8192
     disc_coef: 5
     disc_logit_reg: 0.01
     disc_grad_penalty: 5

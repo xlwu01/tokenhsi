@@ -49,7 +49,7 @@ env:
   enableApplyMaskOnTaskObs: True
 
   task: ["traj", "sit", "carry", "climb"]
-  taskInitProb: [0.1, 0.3, 0.3, 0.3]
+  taskInitProb: [0, 0, 1, 0]
 
   # IET: Interaction Early Termination
   enableIET: True
@@ -167,10 +167,10 @@ env:
       skill: ["loco_carry", "pickUp", "carryWith", "putDown", "omomo"]
       skillInitProb: [1.0, 0.0, 0.0, 0.0, 0.0]
 
-  # 顺序训练相关配置
-  enableSequentialTraining: True  # 是否启用顺序训练
-  taskSequence: [0, 1, 2, 3]  # 任务执行顺序
-  taskEpochs: [10, 30, 30, 30]  # 每个任务的训练轮数
+  # # 顺序训练相关配置
+  # enableSequentialTraining: True  # 是否启用顺序训练
+  # taskSequence: [0, 1, 2, 3]  # 任务执行顺序
+  # taskEpochs: [0, 0, 1, 0]  # 每个任务的训练轮数
     
 
   # power reward
