@@ -150,18 +150,3 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea
 
-
-/body_models/smpl/
-/output/
-/tokenhsi/data/dataset_carry/motions/
-/tokenhsi/data/dataset_amass_loco/motions/
-/tokenhsi/data/dataset_amass_loco/smpl_params/
-/tokenhsi/data/dataset_amass_loco_stairs/motions/
-/tokenhsi/data/dataset_amass_loco_stairs/smpl_params/
-/tokenhsi/data/dataset_sit/motions/
-/tokenhsi/data/dataset_sit/objects/
-/tokenhsi/data/dataset_amass_climb/motions/
-/tokenhsi/data/dataset_amass_climb/smpl_params/
-/tokenhsi/data/dataset_amass_climb/objects/
-/tokenhsi/data/dataset_dynamic_objects/test/
-/tokenhsi/data/dataset_dynamic_objects/train/
